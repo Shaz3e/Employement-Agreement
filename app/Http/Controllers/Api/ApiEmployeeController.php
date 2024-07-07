@@ -60,8 +60,7 @@ class ApiEmployeeController extends Controller
             $employee->update($request->validated());
 
             // Create other details
-            $employee->otherDetails()->create([
-                'employee_id' => $employee->id,
+            $employee->otherDetails()->where('employee_id', $employee->id)->update([
                 'department' => $request->input('otherDetails.department'),
                 'manager' => $request->input('otherDetails.manager'),
             ]);
