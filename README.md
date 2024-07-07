@@ -3,6 +3,8 @@
 ## API Doc
 [Check Builtin Documention](https://employmentagreement.dc.com.pk/docs/api#/)
 
+##
+[Postman](https://www.postman.com/blue-comet-956519/workspace/employment-agreement/collection/21533029-f7c23b10-1638-4e94-ad99-34e3acd8c9d6?action=share&creator=21533029)
 
 ## Default User
 Email: user@email.com<br>
