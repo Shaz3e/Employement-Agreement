@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ApiEmployeeController;
+use App\Http\Controllers\Api\ApiSearchController;
 use App\Http\Controllers\Api\LoginController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +29,9 @@ Route::prefix('v1')->group(function () {
         Route::post('logout', [LoginController::class, 'logout']);
         
         Route::apiResource('employees', ApiEmployeeController::class);
+
+        // Search
+        Route::post('search', [ApiSearchController::class, 'search']);
     });
 
     // Route for handling unauthorized access
